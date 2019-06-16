@@ -48,12 +48,7 @@ $(function () {
     }
 
     let first = null;
-    let flags = true;
     desk.on('click','.poke',function () {
-        if(!flags){
-            return ;
-        }
-        flags=false;
         let _this = $(this);
         console.log(_this);
         let [i,j] = _this.attr('id').split('_');
@@ -63,13 +58,9 @@ $(function () {
         }
 
         if (_this.hasClass('active')){
-            _this.removeClass('active').css({border: 'none'}).animate({top:'+=20px'},function () {
-                flags=true;
-            })
+            _this.removeClass('active').css({border: 'none'}).animate({top:'+=20px'})
         } else {
-            _this.addClass('active').css({border:'2px solid #333333'}).animate({top: '-=20px'},function () {
-                flags=true;
-            })
+            _this.addClass('active').css({border:'2px solid #333333'}).animate({top: '-=20px'})
         }
 
         if (!first){
