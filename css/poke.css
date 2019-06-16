@@ -1,0 +1,118 @@
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, form, input, textarea, select{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+body{
+    background-color: #e9eaed ;
+    font-family: "Adobe 仿宋 Std R", "Adobe 黑体 Std R","Microsoft YaHei UI Light",sans-serif;
+    font-size: 16px;
+    color: #333333;
+    /*line-height: 1.5;*/
+}
+a{
+    color: #fff;
+    /*去掉下划线*/
+    text-decoration: none;
+}
+img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.header{
+    width: 100%;
+    height: 50px;
+    background: #9ed5ff;
+    position: relative;
+}
+.header::before {
+    background: #000 linear-gradient(to left, #4cd964, #5ac8fa, #007aff, #34aadc, #5856d6, #ff2d55);
+    content: "";
+    height: 5px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.headerBox{
+    width: 1200px;
+    height: 50px;
+    margin: 0 auto;
+    line-height: 50px;
+    display:flex;
+    justify-content: space-between;
+}
+.headerBox h1{
+    margin: auto;
+    height: 100%;
+    font-size: 26px;
+    float: left;
+    font-weight: 600;
+    color: white;
+}
+.headerBox h1 img{
+    width:26px;
+    height:26px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 5px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.desk{
+    width: 800px;
+    height: 600px;
+    margin: 50px auto;
+    background-size: cover;
+    background-position: center;
+    background-image: url("../imgs/desk.jpg");
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+.poke{
+    width: 90px;
+    height: 120px;
+    position: absolute;
+    left: 10px;
+    top: 470px;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    border-radius: 3px;
+}
+
+.rightBtn{
+    width: 50px;
+    height: 20px;
+    color: #333333;
+    line-height: 20px;
+    text-align: center;
+    background-image: linear-gradient(90deg, #37e06f 0%, #31d69a 100%), linear-gradient(#3bacfe, #3bacfe);
+    box-shadow: 0 4px 20px 0 rgba(55, 223, 116, 0.75);
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    position: absolute;
+    left: 410px;
+    bottom: 30px;
+}
+.leftBtn{
+    width: 50px;
+    height: 20px;
+    color: #333333;
+    line-height: 20px;
+    text-align: center;
+    background-image: linear-gradient(90deg, #37e06f 0%, #31d69a 100%), linear-gradient(#3bacfe, #3bacfe);
+    box-shadow: 0 4px 20px 0 rgba(55, 223, 116, 0.75);
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    position: absolute;
+    left: 340px;
+    bottom: 30px;
+}
